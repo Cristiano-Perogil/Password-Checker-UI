@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass word checker</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <main>
+    <div class="background">
+        <h1 tabindex="-1">Welcome To My Password Checker </h1>
+        <p>I know how important is everybody's being safe, and nowadays all of us are susceptible to be hacked and consequently, exposed.</p>
+        <p>Therefore, I developed a tool that will show you if your password has been exposed such that you may have a better idea as regarding which kind of data, in case of leaking, has been possibly compromised.</p>
+        <p>It works by encrypting everything you input in the text field below before sending the input to an API (which is responsible for checking if it has been leaked), hence it won't be caught during the process.</p>
+        <form action="submit" method="post" id="sending-password-to-the-api-form">
+            <label for="password-input">Type here your password</label><br>
+            <input type="text" name="password-field" id="password-input" placeholder="Trust me, it's totally safe" required><button>Check</button>
+        </form>
+        <span tabindex="-1" id="feedback">{{ response }}</span><br>
+        <span aria-live="polite" id="form-error"></span>
+    </div>
+</main>
+    <script src="../static/script.js"></script>
+</body>
+</html>

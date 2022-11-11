@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(#010a44, black);
+}
+
+
+main {
+
+    text-align: center;
+    color: white;
+
+}
+
+
+div {
+    align-items: center;
+    width: 50em;
+    padding: 1em;
+    margin: 10% auto;
+    border: 2px solid;
+}
+
+div input {
+    width: 60%;
+    padding: 0.8em;
+    color: white;
+    margin: 1em;
+    background-color: transparent;
+    border: 2px solid #0F61FD;
+
+}
+
+div button {
+    width: 20%;
+    padding: 0.8em;
+    border-radius: 0.8em;
+    background-image: linear-gradient(#0F61FD, #010a44);
+    color: white;
+    cursor: pointer;
+    margin: 1em;
+}
+
+div label {
+    font-weight: bold;
+    margin: 0.8em;
+}
